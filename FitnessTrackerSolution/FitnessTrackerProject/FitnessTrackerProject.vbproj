@@ -77,6 +77,26 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="andrewDataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>andrewDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="andrewDataset.vb">
+      <DependentUpon>andrewDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FitnessTrackerDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FitnessTrackerDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </Compile>
@@ -113,6 +133,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
@@ -130,10 +153,48 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="andrewDataset.xsc">
+      <DependentUpon>andrewDataset.xsd</DependentUpon>
+    </None>
+    <None Include="andrewDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>andrewDataset.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="andrewDataset.xss">
+      <DependentUpon>andrewDataset.xsd</DependentUpon>
+    </None>
+    <None Include="FitnessTrackerDataSet.xsc">
+      <DependentUpon>FitnessTrackerDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="FitnessTrackerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FitnessTrackerDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="FitnessTrackerDataSet.xss">
+      <DependentUpon>FitnessTrackerDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\andrewDataset.datasource" />
+    <None Include="My Project\DataSources\andrewDataset.TableDataTable.datasource" />
+    <None Include="My Project\DataSources\andrewDataset.TableRow.datasource" />
+    <None Include="My Project\DataSources\andrewDataset.TableRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\andrewDataset.TableRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\FitnessTrackerProject.andrewDatasetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="My Project\DataSources\FitnessTrackerProject.andrewDatasetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="My Project\DataSources\FitnessTrackerProject.andrewDatasetTableAdapters.TableTableAdapter.datasource" />
+    <None Include="My Project\DataSources\FitnessTrackerProject.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\FitnessTrackerProject.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\frmLogin.datasource" />
+    <None Include="My Project\DataSources\frmUserInfo.datasource" />
+    <None Include="My Project\DataSources\SplashScreen1.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>

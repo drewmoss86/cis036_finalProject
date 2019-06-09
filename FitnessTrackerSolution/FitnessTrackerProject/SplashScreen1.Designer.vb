@@ -57,7 +57,7 @@ Partial Class SplashScreen1
         '
         Me.pbrLoading.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pbrLoading.Location = New System.Drawing.Point(94, 307)
-        Me.pbrLoading.Margin = New System.Windows.Forms.Padding(2)
+        Me.pbrLoading.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pbrLoading.Name = "pbrLoading"
         Me.pbrLoading.Size = New System.Drawing.Size(196, 19)
         Me.pbrLoading.TabIndex = 2
@@ -76,7 +76,7 @@ Partial Class SplashScreen1
         Me.Controls.Add(Me.lblLoading)
         Me.Controls.Add(Me.lblAppTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "SplashScreen1"
