@@ -7,8 +7,9 @@ Option Infer Off
 Imports System.Data.SqlClient
 
 Public Class frmLogin
+
     ' Instantiate SQLConnection object
-    Dim connection As SqlConnection = New SqlConnection("Data Source=SVY; Initial Catalog=FitnessTracker; Integrated Security=True")
+    Dim connection As SqlConnection = New SqlConnection(frmUserInfo.connectionString)
 
     Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
         frmUserInfo.Show()
@@ -35,35 +36,48 @@ Public Class frmLogin
 
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         ' String query
-        Dim selectLoginInfo As String = "SELECT Name, Password FROM Fit_User WHERE Name = @Name AND Password = @Password"
-        ' Set select command
-        Dim selectCmd As New SqlCommand(selectLoginInfo, connection)
+        Dim selectLoginInfo As String = "SELECT Username, Password FROM Fit_User WHERE Username = @Username AND Password = @Password"
 
-        ' Open sql connection if fields are filled
-        If txtUsername.Text <> String.Empty And txtPassword.Text <> String.Empty Then
-            connection.Open()
-        Else
-            ErrorMsg()
-            MessageBox.Show("Please fill out required fields!")
-            Exit Sub
-        End If
+        Try
+            ' Set select command
+            Dim selectCmd As New SqlCommand(selectLoginInfo, connection)
 
-        ' Required field parameters
-        selectCmd.Parameters.Add("@Name", SqlDbType.NVarChar, 50).Value = txtUsername.Text
-        selectCmd.Parameters.Add("@Password", SqlDbType.NVarChar, 50).Value = txtPassword.Text
+            ' Open sql connection if fields are filled
+            If txtUsername.Text.Length <> 0 And txtPassword.Text.Length <> 0 Then
+                connection.Open()
+            Else
+                ErrorMsg()
+                MessageBox.Show("Please fill out required fields!")
+                Exit Sub
+            End If
 
-        Dim adapter As New SqlDataAdapter(selectCmd)
-        Dim table As New DataTable()
+            ' Required field parameters
+            selectCmd.Parameters.Add("@Username", SqlDbType.NVarChar, 50).Value = txtUsername.Text
+            selectCmd.Parameters.Add("@Password", SqlDbType.NVarChar, 50).Value = txtPassword.Text
+            Dim adapter As New SqlDataAdapter(selectCmd)
+            Dim table As New DataTable()
+            adapter.Fill(table)
 
-        adapter.Fill(table)
+            ' If at least one row of data is returned, login successful
+            If table.Rows.Count <= 0 Then
+                MessageBox.Show("Username or Password is Invalid!")
+                connection.Close()
+                Exit Sub
+            Else
+                MessageBox.Show("Login Successful!")
+            End If
+            connection.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message, "Select Unsuccessful...", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End Try
 
-        ' If at least one row of data is returned, login successful
-        If table.Rows.Count <= 0 Then
-            MessageBox.Show("Username or Password is Invalid!")
-        Else
-            MessageBox.Show("Login Successful!")
-        End If
+        ' Redirect to Report form
+        frmReport.Show()
+        Me.Hide()
 
+    End Sub
 
+    Private Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        Me.Close()
     End Sub
 End Class

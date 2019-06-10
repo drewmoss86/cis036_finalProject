@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmLogin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
         Me.lblUsername = New System.Windows.Forms.Label()
@@ -33,6 +33,7 @@ Partial Class frmLogin
         Me.lblMsgNoUsername = New System.Windows.Forms.Label()
         Me.lblMsgNoPW = New System.Windows.Forms.Label()
         Me.txtPassword = New System.Windows.Forms.MaskedTextBox()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblUsername
@@ -63,7 +64,7 @@ Partial Class frmLogin
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(217, 22)
-        Me.txtUsername.TabIndex = 2
+        Me.txtUsername.TabIndex = 0
         '
         'lblLoginTitle
         '
@@ -80,11 +81,11 @@ Partial Class frmLogin
         'btnRegister
         '
         Me.btnRegister.ForeColor = System.Drawing.Color.MediumBlue
-        Me.btnRegister.Location = New System.Drawing.Point(168, 306)
+        Me.btnRegister.Location = New System.Drawing.Point(168, 300)
         Me.btnRegister.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(75, 23)
-        Me.btnRegister.TabIndex = 5
+        Me.btnRegister.Size = New System.Drawing.Size(75, 33)
+        Me.btnRegister.TabIndex = 2
         Me.btnRegister.Text = "Register"
         Me.btnRegister.UseVisualStyleBackColor = True
         '
@@ -101,10 +102,10 @@ Partial Class frmLogin
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(168, 389)
+        Me.btnLogin.Location = New System.Drawing.Point(168, 391)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(217, 29)
-        Me.btnLogin.TabIndex = 7
+        Me.btnLogin.TabIndex = 3
         Me.btnLogin.Text = "&Login"
         Me.btnLogin.UseVisualStyleBackColor = True
         '
@@ -137,7 +138,16 @@ Partial Class frmLogin
         Me.txtPassword.Location = New System.Drawing.Point(168, 244)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(217, 22)
-        Me.txtPassword.TabIndex = 19
+        Me.txtPassword.TabIndex = 1
+        '
+        'btnCancel
+        '
+        Me.btnCancel.Location = New System.Drawing.Point(168, 432)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(217, 29)
+        Me.btnCancel.TabIndex = 4
+        Me.btnCancel.Text = "&Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = True
         '
         'frmLogin
         '
@@ -145,6 +155,7 @@ Partial Class frmLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(533, 516)
+        Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.lblMsgNoPW)
         Me.Controls.Add(Me.lblMsgNoUsername)
@@ -175,4 +186,5 @@ Partial Class frmLogin
     Friend WithEvents lblMsgNoUsername As Label
     Friend WithEvents lblMsgNoPW As Label
     Friend WithEvents txtPassword As MaskedTextBox
+    Friend WithEvents btnCancel As Button
 End Class

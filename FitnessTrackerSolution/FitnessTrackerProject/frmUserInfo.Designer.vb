@@ -42,7 +42,6 @@ Partial Class frmUserInfo
         Me.txtAge = New System.Windows.Forms.TextBox()
         Me.lblTargetWeight = New System.Windows.Forms.Label()
         Me.txtTarWeight = New System.Windows.Forms.TextBox()
-        Me.lblSaveMessage = New System.Windows.Forms.Label()
         Me.lblWelcomeBack = New System.Windows.Forms.Label()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.lblMsgNoName = New System.Windows.Forms.Label()
@@ -55,6 +54,9 @@ Partial Class frmUserInfo
         Me.lblMsgNoPW = New System.Windows.Forms.Label()
         Me.lblTestConn = New System.Windows.Forms.Label()
         Me.lblMsgNoHt = New System.Windows.Forms.Label()
+        Me.lblMsgNoUsername = New System.Windows.Forms.Label()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.lblUsername = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.UserBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AndrewDataset, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,7 +98,7 @@ Partial Class frmUserInfo
         '
         Me.lblName.AutoSize = True
         Me.lblName.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.Location = New System.Drawing.Point(176, 94)
+        Me.lblName.Location = New System.Drawing.Point(179, 123)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(58, 20)
         Me.lblName.TabIndex = 1
@@ -107,7 +109,7 @@ Partial Class frmUserInfo
         '
         Me.lblAge.AutoSize = True
         Me.lblAge.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAge.Location = New System.Drawing.Point(191, 167)
+        Me.lblAge.Location = New System.Drawing.Point(195, 232)
         Me.lblAge.Name = "lblAge"
         Me.lblAge.Size = New System.Drawing.Size(42, 20)
         Me.lblAge.TabIndex = 3
@@ -118,7 +120,7 @@ Partial Class frmUserInfo
         '
         Me.lblInitWeight.AutoSize = True
         Me.lblInitWeight.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInitWeight.Location = New System.Drawing.Point(121, 288)
+        Me.lblInitWeight.Location = New System.Drawing.Point(124, 340)
         Me.lblInitWeight.Name = "lblInitWeight"
         Me.lblInitWeight.Size = New System.Drawing.Size(113, 20)
         Me.lblInitWeight.TabIndex = 9
@@ -129,7 +131,7 @@ Partial Class frmUserInfo
         '
         Me.lblHeight.AutoSize = True
         Me.lblHeight.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeight.Location = New System.Drawing.Point(171, 208)
+        Me.lblHeight.Location = New System.Drawing.Point(174, 268)
         Me.lblHeight.Name = "lblHeight"
         Me.lblHeight.Size = New System.Drawing.Size(63, 20)
         Me.lblHeight.TabIndex = 5
@@ -140,7 +142,7 @@ Partial Class frmUserInfo
         '
         Me.lblZip.AutoSize = True
         Me.lblZip.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblZip.Location = New System.Drawing.Point(195, 246)
+        Me.lblZip.Location = New System.Drawing.Point(190, 303)
         Me.lblZip.Name = "lblZip"
         Me.lblZip.Size = New System.Drawing.Size(38, 20)
         Me.lblZip.TabIndex = 7
@@ -149,7 +151,7 @@ Partial Class frmUserInfo
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(239, 91)
+        Me.txtName.Location = New System.Drawing.Point(239, 123)
         Me.txtName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(217, 22)
@@ -167,41 +169,41 @@ Partial Class frmUserInfo
         '
         'txtZip
         '
-        Me.txtZip.Location = New System.Drawing.Point(239, 244)
+        Me.txtZip.Location = New System.Drawing.Point(239, 303)
         Me.txtZip.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtZip.Name = "txtZip"
         Me.txtZip.Size = New System.Drawing.Size(100, 22)
-        Me.txtZip.TabIndex = 4
+        Me.txtZip.TabIndex = 5
         '
         'txtHeight
         '
-        Me.txtHeight.Location = New System.Drawing.Point(239, 206)
+        Me.txtHeight.Location = New System.Drawing.Point(239, 267)
         Me.txtHeight.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtHeight.Name = "txtHeight"
         Me.txtHeight.Size = New System.Drawing.Size(100, 22)
-        Me.txtHeight.TabIndex = 3
+        Me.txtHeight.TabIndex = 4
         '
         'txtInitWeight
         '
-        Me.txtInitWeight.Location = New System.Drawing.Point(239, 286)
+        Me.txtInitWeight.Location = New System.Drawing.Point(239, 339)
         Me.txtInitWeight.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtInitWeight.Name = "txtInitWeight"
         Me.txtInitWeight.Size = New System.Drawing.Size(100, 22)
-        Me.txtInitWeight.TabIndex = 5
+        Me.txtInitWeight.TabIndex = 6
         '
         'txtAge
         '
-        Me.txtAge.Location = New System.Drawing.Point(239, 165)
+        Me.txtAge.Location = New System.Drawing.Point(239, 231)
         Me.txtAge.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtAge.Name = "txtAge"
         Me.txtAge.Size = New System.Drawing.Size(100, 22)
-        Me.txtAge.TabIndex = 2
+        Me.txtAge.TabIndex = 3
         '
         'lblTargetWeight
         '
         Me.lblTargetWeight.AutoSize = True
         Me.lblTargetWeight.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTargetWeight.Location = New System.Drawing.Point(113, 329)
+        Me.lblTargetWeight.Location = New System.Drawing.Point(118, 376)
         Me.lblTargetWeight.Name = "lblTargetWeight"
         Me.lblTargetWeight.Size = New System.Drawing.Size(119, 20)
         Me.lblTargetWeight.TabIndex = 11
@@ -210,21 +212,11 @@ Partial Class frmUserInfo
         '
         'txtTarWeight
         '
-        Me.txtTarWeight.Location = New System.Drawing.Point(239, 326)
+        Me.txtTarWeight.Location = New System.Drawing.Point(239, 375)
         Me.txtTarWeight.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtTarWeight.Name = "txtTarWeight"
         Me.txtTarWeight.Size = New System.Drawing.Size(100, 22)
-        Me.txtTarWeight.TabIndex = 6
-        '
-        'lblSaveMessage
-        '
-        Me.lblSaveMessage.Location = New System.Drawing.Point(3, 434)
-        Me.lblSaveMessage.Name = "lblSaveMessage"
-        Me.lblSaveMessage.Size = New System.Drawing.Size(139, 26)
-        Me.lblSaveMessage.TabIndex = 1
-        Me.lblSaveMessage.Text = "Information Saved"
-        Me.lblSaveMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblSaveMessage.Visible = False
+        Me.txtTarWeight.TabIndex = 7
         '
         'lblWelcomeBack
         '
@@ -239,11 +231,11 @@ Partial Class frmUserInfo
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(235, 391)
-        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSubmit.Location = New System.Drawing.Point(235, 454)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(113, 33)
-        Me.btnSubmit.TabIndex = 7
+        Me.btnSubmit.TabIndex = 8
         Me.btnSubmit.Text = "S&ubmit"
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
@@ -251,7 +243,7 @@ Partial Class frmUserInfo
         '
         Me.lblMsgNoName.AutoSize = True
         Me.lblMsgNoName.ForeColor = System.Drawing.Color.Red
-        Me.lblMsgNoName.Location = New System.Drawing.Point(460, 96)
+        Me.lblMsgNoName.Location = New System.Drawing.Point(458, 125)
         Me.lblMsgNoName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMsgNoName.Name = "lblMsgNoName"
         Me.lblMsgNoName.Size = New System.Drawing.Size(99, 17)
@@ -263,7 +255,7 @@ Partial Class frmUserInfo
         '
         Me.lblMsgNoInitWeight.AutoSize = True
         Me.lblMsgNoInitWeight.ForeColor = System.Drawing.Color.Red
-        Me.lblMsgNoInitWeight.Location = New System.Drawing.Point(343, 290)
+        Me.lblMsgNoInitWeight.Location = New System.Drawing.Point(341, 341)
         Me.lblMsgNoInitWeight.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMsgNoInitWeight.Name = "lblMsgNoInitWeight"
         Me.lblMsgNoInitWeight.Size = New System.Drawing.Size(99, 17)
@@ -275,7 +267,7 @@ Partial Class frmUserInfo
         '
         Me.lblMsgNoTargWeight.AutoSize = True
         Me.lblMsgNoTargWeight.ForeColor = System.Drawing.Color.Red
-        Me.lblMsgNoTargWeight.Location = New System.Drawing.Point(343, 331)
+        Me.lblMsgNoTargWeight.Location = New System.Drawing.Point(341, 377)
         Me.lblMsgNoTargWeight.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMsgNoTargWeight.Name = "lblMsgNoTargWeight"
         Me.lblMsgNoTargWeight.Size = New System.Drawing.Size(99, 17)
@@ -295,17 +287,17 @@ Partial Class frmUserInfo
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(239, 128)
+        Me.txtPassword.Location = New System.Drawing.Point(239, 195)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(152, 22)
-        Me.txtPassword.TabIndex = 1
+        Me.txtPassword.TabIndex = 2
         '
         'lblPassword
         '
         Me.lblPassword.AutoSize = True
         Me.lblPassword.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPassword.Location = New System.Drawing.Point(149, 130)
+        Me.lblPassword.Location = New System.Drawing.Point(154, 196)
         Me.lblPassword.Name = "lblPassword"
         Me.lblPassword.Size = New System.Drawing.Size(83, 20)
         Me.lblPassword.TabIndex = 19
@@ -316,7 +308,7 @@ Partial Class frmUserInfo
         '
         Me.lblMsgNoPW.AutoSize = True
         Me.lblMsgNoPW.ForeColor = System.Drawing.Color.Red
-        Me.lblMsgNoPW.Location = New System.Drawing.Point(395, 133)
+        Me.lblMsgNoPW.Location = New System.Drawing.Point(393, 197)
         Me.lblMsgNoPW.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMsgNoPW.Name = "lblMsgNoPW"
         Me.lblMsgNoPW.Size = New System.Drawing.Size(99, 17)
@@ -337,7 +329,7 @@ Partial Class frmUserInfo
         '
         Me.lblMsgNoHt.AutoSize = True
         Me.lblMsgNoHt.ForeColor = System.Drawing.Color.Red
-        Me.lblMsgNoHt.Location = New System.Drawing.Point(343, 211)
+        Me.lblMsgNoHt.Location = New System.Drawing.Point(341, 269)
         Me.lblMsgNoHt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblMsgNoHt.Name = "lblMsgNoHt"
         Me.lblMsgNoHt.Size = New System.Drawing.Size(99, 17)
@@ -345,11 +337,45 @@ Partial Class frmUserInfo
         Me.lblMsgNoHt.Text = "Required field!"
         Me.lblMsgNoHt.Visible = False
         '
+        'lblMsgNoUsername
+        '
+        Me.lblMsgNoUsername.AutoSize = True
+        Me.lblMsgNoUsername.ForeColor = System.Drawing.Color.Red
+        Me.lblMsgNoUsername.Location = New System.Drawing.Point(458, 161)
+        Me.lblMsgNoUsername.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblMsgNoUsername.Name = "lblMsgNoUsername"
+        Me.lblMsgNoUsername.Size = New System.Drawing.Size(99, 17)
+        Me.lblMsgNoUsername.TabIndex = 26
+        Me.lblMsgNoUsername.Text = "Required field!"
+        Me.lblMsgNoUsername.Visible = False
+        '
+        'txtUsername
+        '
+        Me.txtUsername.Location = New System.Drawing.Point(239, 159)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(217, 22)
+        Me.txtUsername.TabIndex = 1
+        '
+        'lblUsername
+        '
+        Me.lblUsername.AutoSize = True
+        Me.lblUsername.Font = New System.Drawing.Font("Maiandra GD", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsername.Location = New System.Drawing.Point(150, 159)
+        Me.lblUsername.Name = "lblUsername"
+        Me.lblUsername.Size = New System.Drawing.Size(87, 20)
+        Me.lblUsername.TabIndex = 25
+        Me.lblUsername.Text = "Username:"
+        Me.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'frmUserInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(676, 463)
+        Me.ClientSize = New System.Drawing.Size(676, 521)
+        Me.Controls.Add(Me.lblMsgNoUsername)
+        Me.Controls.Add(Me.txtUsername)
+        Me.Controls.Add(Me.lblUsername)
         Me.Controls.Add(Me.lblMsgNoHt)
         Me.Controls.Add(Me.lblTestConn)
         Me.Controls.Add(Me.lblMsgNoPW)
@@ -360,7 +386,6 @@ Partial Class frmUserInfo
         Me.Controls.Add(Me.lblMsgNoName)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.lblWelcomeBack)
-        Me.Controls.Add(Me.lblSaveMessage)
         Me.Controls.Add(Me.txtTarWeight)
         Me.Controls.Add(Me.lblTargetWeight)
         Me.Controls.Add(Me.txtAge)
@@ -404,7 +429,6 @@ Partial Class frmUserInfo
     Friend WithEvents txtAge As TextBox
     Friend WithEvents lblTargetWeight As Label
     Friend WithEvents txtTarWeight As TextBox
-    Friend WithEvents lblSaveMessage As Label
     Friend WithEvents lblWelcomeBack As Label
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnSubmit As Button
@@ -420,4 +444,7 @@ Partial Class frmUserInfo
     Friend WithEvents lblMsgNoPW As Label
     Friend WithEvents lblTestConn As Label
     Friend WithEvents lblMsgNoHt As Label
+    Friend WithEvents lblMsgNoUsername As Label
+    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents lblUsername As Label
 End Class

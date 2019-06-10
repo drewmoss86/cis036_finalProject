@@ -43,7 +43,6 @@ C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\My
 C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\Google.Protobuf.dll
 C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\MySql.Data.xml
-C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\obj\Debug\FitnessTrackerProject.vbprojAssemblyReference.cache
 C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\obj\Debug\FitnessTrackerProject.frmLogin.resources
 C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\obj\Debug\FitnessTrackerProject.frmUserInfo.resources
 C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\obj\Debug\FitnessTrackerProject.Resources.resources
