@@ -57,6 +57,7 @@ Partial Class frmUserInfo
         Me.lblMsgNoUsername = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.lblUsername = New System.Windows.Forms.Label()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.UserBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AndrewDataset, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -231,7 +232,7 @@ Partial Class frmUserInfo
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(235, 454)
+        Me.btnSubmit.Location = New System.Drawing.Point(170, 449)
         Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(113, 33)
@@ -368,11 +369,22 @@ Partial Class frmUserInfo
         Me.lblUsername.Text = "Username:"
         Me.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'btnCancel
+        '
+        Me.btnCancel.Location = New System.Drawing.Point(344, 449)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(113, 33)
+        Me.btnCancel.TabIndex = 27
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = True
+        '
         'frmUserInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(676, 521)
+        Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.lblMsgNoUsername)
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.lblUsername)
@@ -447,4 +459,5 @@ Partial Class frmUserInfo
     Friend WithEvents lblMsgNoUsername As Label
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents lblUsername As Label
+    Friend WithEvents btnCancel As Button
 End Class

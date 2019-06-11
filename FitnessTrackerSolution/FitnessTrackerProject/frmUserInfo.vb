@@ -7,7 +7,7 @@ Option Infer Off
 Imports System.Data.SqlClient
 Public Class frmUserInfo
     ' Connection string to be shared across forms
-    Public connectionString As String = "Data Source=SVY;Initial Catalog=FitnessTracker;Integrated Security=True"
+    Public connectionString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\FitnessTracker.mdf;Integrated Security=True;Connect Timeout=30"
 
     ' Instantiate SQLConnection object and Command object as shown below
     Dim connection As SqlConnection = New SqlConnection(connectionString)
@@ -142,4 +142,8 @@ Public Class frmUserInfo
 
     End Sub
 
+    Private Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        frmLogin.Show()
+        Me.Hide()
+    End Sub
 End Class

@@ -76,7 +76,7 @@ Public Class frmReport
         Application.Exit()
     End Sub
 
-    Private Sub BtnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+    Private Sub BtnCalcBMI_Click(sender As Object, e As EventArgs) Handles btnCalcBMI.Click
         Dim dblNewWeight As Double
         'Dim dblBMI As Double = Math.Round(, MidpointRounding.AwayFromZero)
         ' Calc new BMI
@@ -90,7 +90,7 @@ Public Class frmReport
         End If
     End Sub
 
-    Private Sub BtnCalcBodyFat_Click(sender As Object, e As EventArgs) Handles btnCalcBodyFat.Click
+    Private Sub BtnCalcBodyFat_Click(sender As Object, e As EventArgs) Handles btnCalcBF.Click
         ' BF variables
         Dim dblAbdominal As Double
         Dim dblNeck As Double

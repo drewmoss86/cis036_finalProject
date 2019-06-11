@@ -152,5 +152,10 @@ Update Order Option
 Used to sort self-referenced table's rows
 </summary>
 </member>
+<member name="T:FitnessTrackerProject.FitnessTrackerDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
 </members>
 </doc>

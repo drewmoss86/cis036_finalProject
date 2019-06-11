@@ -36,7 +36,7 @@ Partial Class frmReport
         Me.lblNewWt = New System.Windows.Forms.Label()
         Me.txtNewWt = New System.Windows.Forms.TextBox()
         Me.lblNewBMICalc = New System.Windows.Forms.Label()
-        Me.btnCalc = New System.Windows.Forms.Button()
+        Me.btnCalcBMI = New System.Windows.Forms.Button()
         Me.grpBMI = New System.Windows.Forms.GroupBox()
         Me.lblInitWt = New System.Windows.Forms.Label()
         Me.lblInitWtCalc = New System.Windows.Forms.Label()
@@ -48,7 +48,7 @@ Partial Class frmReport
         Me.grpBFPercentage = New System.Windows.Forms.GroupBox()
         Me.lblBFCalc = New System.Windows.Forms.Label()
         Me.lblBF = New System.Windows.Forms.Label()
-        Me.btnCalcBodyFat = New System.Windows.Forms.Button()
+        Me.btnCalcBF = New System.Windows.Forms.Button()
         Me.lblHips = New System.Windows.Forms.Label()
         Me.lblNeck = New System.Windows.Forms.Label()
         Me.lblAbdominal = New System.Windows.Forms.Label()
@@ -172,19 +172,19 @@ Partial Class frmReport
         Me.lblNewBMICalc.TabIndex = 7
         Me.lblNewBMICalc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnCalc
+        'btnCalcBMI
         '
-        Me.btnCalc.Location = New System.Drawing.Point(178, 142)
-        Me.btnCalc.Name = "btnCalc"
-        Me.btnCalc.Size = New System.Drawing.Size(100, 31)
-        Me.btnCalc.TabIndex = 8
-        Me.btnCalc.Text = "Calculate"
-        Me.btnCalc.UseVisualStyleBackColor = True
+        Me.btnCalcBMI.Location = New System.Drawing.Point(178, 142)
+        Me.btnCalcBMI.Name = "btnCalcBMI"
+        Me.btnCalcBMI.Size = New System.Drawing.Size(100, 31)
+        Me.btnCalcBMI.TabIndex = 8
+        Me.btnCalcBMI.Text = "Calculate"
+        Me.btnCalcBMI.UseVisualStyleBackColor = True
         '
         'grpBMI
         '
         Me.grpBMI.Controls.Add(Me.lblInitWt)
-        Me.grpBMI.Controls.Add(Me.btnCalc)
+        Me.grpBMI.Controls.Add(Me.btnCalcBMI)
         Me.grpBMI.Controls.Add(Me.lblInitWtCalc)
         Me.grpBMI.Controls.Add(Me.lblCurrBMI)
         Me.grpBMI.Controls.Add(Me.lblCurrBMICalc)
@@ -272,7 +272,7 @@ Partial Class frmReport
         '
         Me.grpBFPercentage.Controls.Add(Me.lblBFCalc)
         Me.grpBFPercentage.Controls.Add(Me.lblBF)
-        Me.grpBFPercentage.Controls.Add(Me.btnCalcBodyFat)
+        Me.grpBFPercentage.Controls.Add(Me.btnCalcBF)
         Me.grpBFPercentage.Controls.Add(Me.lblHips)
         Me.grpBFPercentage.Controls.Add(Me.lblNeck)
         Me.grpBFPercentage.Controls.Add(Me.lblAbdominal)
@@ -306,14 +306,14 @@ Partial Class frmReport
         Me.lblBF.TabIndex = 17
         Me.lblBF.Text = "Body Fat:"
         '
-        'btnCalcBodyFat
+        'btnCalcBF
         '
-        Me.btnCalcBodyFat.Location = New System.Drawing.Point(138, 343)
-        Me.btnCalcBodyFat.Name = "btnCalcBodyFat"
-        Me.btnCalcBodyFat.Size = New System.Drawing.Size(100, 31)
-        Me.btnCalcBodyFat.TabIndex = 15
-        Me.btnCalcBodyFat.Text = "Calculate"
-        Me.btnCalcBodyFat.UseVisualStyleBackColor = True
+        Me.btnCalcBF.Location = New System.Drawing.Point(138, 343)
+        Me.btnCalcBF.Name = "btnCalcBF"
+        Me.btnCalcBF.Size = New System.Drawing.Size(100, 31)
+        Me.btnCalcBF.TabIndex = 15
+        Me.btnCalcBF.Text = "Calculate"
+        Me.btnCalcBF.UseVisualStyleBackColor = True
         '
         'lblHips
         '
@@ -481,7 +481,7 @@ Partial Class frmReport
     Friend WithEvents lblNewWt As Label
     Friend WithEvents txtNewWt As TextBox
     Friend WithEvents lblNewBMICalc As Label
-    Friend WithEvents btnCalc As Button
+    Friend WithEvents btnCalcBMI As Button
     Friend WithEvents grpBMI As GroupBox
     Friend WithEvents lblCurrBMI As Label
     Friend WithEvents lblCurrBMICalc As Label
@@ -500,7 +500,7 @@ Partial Class frmReport
     Friend WithEvents grpGender As GroupBox
     Friend WithEvents radMale As RadioButton
     Friend WithEvents radFemale As RadioButton
-    Friend WithEvents btnCalcBodyFat As Button
+    Friend WithEvents btnCalcBF As Button
     Friend WithEvents lblBF As Label
     Friend WithEvents lblBFCalc As Label
     Friend WithEvents grpProfile As GroupBox

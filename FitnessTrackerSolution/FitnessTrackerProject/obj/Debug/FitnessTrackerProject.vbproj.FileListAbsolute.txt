@@ -58,3 +58,6 @@ C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\Fi
 C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\FitnessTrackerDataSet.xsc
 C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\FitnessTrackerDataSet.xsd
 C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\FitnessTrackerDataSet.xss
+C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\obj\Debug\FitnessTrackerProject.vbprojAssemblyReference.cache
+C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\FitnessTracker.mdf
+C:\Users\drewc\Desktop\FitnessTrackerSolution\FitnessTrackerProject\bin\Debug\FitnessTracker_log.ldf
